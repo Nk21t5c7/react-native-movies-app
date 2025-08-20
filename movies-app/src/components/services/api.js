@@ -4,7 +4,6 @@ import { APP_TOKEN, BASE_URL } from "../../config/apiConfig";
 
 const getData = async (type, genre) => {
     const url = BASE_URL
-    console.log("getMovies called with type:", type);
     try {
         const response = await axios.get(`${url}/${genre}/${type}?language=en-US&page=1`, {
             headers: {

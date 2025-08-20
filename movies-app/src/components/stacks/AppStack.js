@@ -45,7 +45,6 @@ const AppStack = () => {
                     headerStyle: {
                         backgroundColor: '#fff',
                     },
-                    // headerShown: false,
                 })}
             />
 

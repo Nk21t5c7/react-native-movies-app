@@ -1,10 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-// import Navigation from './src/components/Navigation';
-// import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createTheme, ThemeProvider } from '@rneui/themed';
-import Header from './src/components/layout/Header';
 import AppStack from './src/components/stacks/AppStack';
 
 import axios from 'axios';
@@ -21,7 +17,6 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <SafeAreaProvider>
         <StatusBar style="light" />
-        {/* <Header /> */}
         <AppStack />
       </SafeAreaProvider>
     </ThemeProvider>

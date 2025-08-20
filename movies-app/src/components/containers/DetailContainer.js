@@ -6,79 +6,6 @@ import Loading from '../layout/Loading';
 
 const screenWidth = Dimensions.get('window').width;
 
-// const detailData = {
-//     "adult": false,
-//     "backdrop_path": "/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
-//     "belongs_to_collection": null,
-//     "budget": 100000000,
-//     "genres": [
-//         {
-//             "id": 10751,
-//             "name": "Family"
-//         },
-//         {
-//             "id": 35,
-//             "name": "Comedy"
-//         },
-//         {
-//             "id": 878,
-//             "name": "Science Fiction"
-//         }
-//     ],
-//     "homepage": "https://movies.disney.com/lilo-and-stitch-2025",
-//     "id": 552524,
-//     "imdb_id": "tt11655566",
-//     "origin_country": [
-//         "US"
-//     ],
-//     "original_language": "en",
-//     "original_title": "Lilo & Stitch",
-//     "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-//     "popularity": 736.864,
-//     "poster_path": "/tUae3mefrDVTgm5mRzqWnZK6fOP.jpg",
-//     "production_companies": [
-//         {
-//             "id": 2,
-//             "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
-//             "name": "Walt Disney Pictures",
-//             "origin_country": "US"
-//         },
-//         {
-//             "id": 118854,
-//             "logo_path": "/g9LPNlQFoDcHjfnvrEqFmeIaDrZ.png",
-//             "name": "Rideback",
-//             "origin_country": "US"
-//         }
-//     ],
-//     "production_countries": [
-//         {
-//             "iso_3166_1": "US",
-//             "name": "United States of America"
-//         }
-//     ],
-//     "release_date": "2025-05-17",
-//     "revenue": 610800000,
-//     "runtime": 108,
-//     "spoken_languages": [
-//         {
-//             "english_name": "English",
-//             "iso_639_1": "en",
-//             "name": "English"
-//         },
-//         {
-//             "english_name": "Spanish",
-//             "iso_639_1": "es",
-//             "name": "Español"
-//         }
-//     ],
-//     "status": "Released",
-//     "tagline": "Hold on to your coconuts.",
-//     "title": "Lilo & Stitch",
-//     "video": false,
-//     "vote_average": 7.1,
-//     "vote_count": 391
-// }
-
 const DetailContainer = ({ id, title, type }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [item, setItem] = useState({});
@@ -101,38 +28,6 @@ const DetailContainer = ({ id, title, type }) => {
             }
         };
         fetchDetail();
-
-        // if (type === 'movie') {
-        //     const fetchMovieDetail = async () => {
-        //         try {
-        //             setIsLoading(true);
-        //             const data = await getDetail(id, );
-        //             console.log('Movie Detail:', data);
-        //             setItem(data);
-        //         } catch (error) {
-        //             console.error('Error fetching:', error);
-        //         } finally {
-        //             setIsLoading(false);
-        //         }
-        //     };
-        //     fetchMovieDetail();
-        // }
-        // else {
-
-        //     const fetchTVDetail = async () => {
-        //         try {
-        //             setIsLoading(true);
-        //             const data = await getDetail(id, 'tv');
-        //             console.log('TV Detail:', data);
-        //             setItem(data);
-        //         } catch (error) {
-        //             console.error('Error fetching:', error);
-        //         } finally {
-        //             setIsLoading(false);
-        //         }
-        //     };
-        //     fetchTVDetail();
-        // }
 
     }, [])
 
@@ -206,3 +101,6 @@ const styles = StyleSheet.create({
         textAlign: 'justify',
     }
 });
+
+
+
